@@ -20,6 +20,14 @@
       {
         "command": "goodwin-build-runner.buildCurrentFile",
         "title": "Build current file"
+      },
+      {
+        "command": "goodwin-build-runner.sayHello1",
+        "title": "Test 1"
+      },
+      {
+        "command": "goodwin-build-runner.sayHello2",
+        "title": "Test 2"
       }
     ],
     "keybindings": [
@@ -31,20 +39,48 @@
       }
     ],
     "configuration": {
-            "title": "Goodwin Build runner Settings",
-            "properties": {
-                "goodwinExtension.FlutterIsNotRootFolder": {
-                    "type": "boolean",
-                    "default": false,
-                    "description": "  Если проект Flutter не находится в корневой директории"
-                },
-                "goodwinExtension.pathToProjectRoot": {
-                    "type": "string",
-                    "default": null,
-                    "description": "Путь к корневому каталогу Flutter проекта."
-                }
-            }
+      "title": "Goodwin Build runner Settings",
+      "properties": {
+        "goodwinExtension.flutterIsNotRootFolder": {
+          "type": "boolean",
+          "default": false,
+          "description": "  Если проект Flutter не находится в корневой директории"
+        },
+        "goodwinExtension.pathToProjectRoot": {
+          "type": "string",
+          "default": null,
+          "description": "Путь к корневому каталогу Flutter проекта."
         }
+      }
+    },
+    "submenus": [
+      {
+        "id": "goodwin-build-runner.submenu",
+        "label": "Goodwin build runner"
+      }
+    ],
+    "menus": {
+      "editor/title": [
+        {
+          "submenu": "goodwin-build-runner.submenu",
+          "group": "navigation"
+        }
+      ],
+      "goodwin-build-runner.submenu": [
+        {
+          "command": "goodwin-build-runner.buildAll"
+        },
+        {
+          "command": "goodwin-build-runner.buildCurrentFile"
+        },
+        {
+          "command": "goodwin-build-runner.sayHello1"
+        },
+        {
+          "command": "goodwin-build-runner.sayHello2"
+        }
+      ]
+    }
   },
   "scripts": {
     "vscode:prepublish": "npm run compile",
