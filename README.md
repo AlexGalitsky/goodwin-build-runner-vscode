@@ -1,39 +1,31 @@
 # goodwin-build-runner README
 
-This is the README for your extension "goodwin-build-runner". After writing up a brief description, we recommend including the following sections.
+Extendsion for build runner
 
 ## Features
 
-Describe specific features of your extension including screenshots of your extension in action. Image paths are relative to this README file.
+- Build all
+- Build current opened file
 
-For example if there is an image subfolder under your extension project workspace:
-
-\!\[feature X\]\(images/feature-x.png\)
-
-> Tip: Many popular extensions utilize animations. This is an excellent way to show off your extension! We recommend short, focused animations that are easy to follow.
 
 ## Requirements
 
-If you have any requirements or dependencies, add a section describing those and how to install and configure them.
+No
 
 ## Extension Settings
 
-Include if your extension adds any VS Code settings through the `contributes.configuration` extension point.
-
-For example:
-
 This extension contributes the following settings:
 
-* `myExtension.enable`: Enable/disable this extension.
-* `myExtension.thing`: Set to `blah` to do something.
+* `goodwinExtension.FlutterIsNotRootFolder`: Root folder is Flutter project
+* `goodwinExtension.pathToProjectRoot`: Flutter project root
 
 ## Known Issues
 
-Calling out known issues can help limit users opening duplicate issues against your extension.
+No
 
 ## Release Notes
 
-Users appreciate release notes as you update your extension.
+First release
 
 ### 1.0.0
 
