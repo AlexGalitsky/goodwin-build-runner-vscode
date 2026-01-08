@@ -1,11 +1,24 @@
 {
   "name": "goodwin-build-runner",
-  "displayName": "goodwin-build-runner",
-  "description": "Extension for Flutter build runner",
+  "displayName": "Goodwin build runner",
+  "description": "Extension for Flutter build runner. Run build_runner commands.",
+  "publisher": "AlexGalitsky",
   "version": "0.0.1",
   "engines": {
     "vscode": "^1.93.0"
   },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/AlexGalitsky/goodwin-build-runner-vscode.git"
+  },
+  "keywords": [
+    "build_runner",
+    "freezed",
+    "dart",
+    "flutter",
+    "build"
+  ],
+  "icon": "assets/icon.png",
   "categories": [
     "Other"
   ],
